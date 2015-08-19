@@ -15,7 +15,7 @@ import {Validation} from './validation/validation';
 
 export function configure(aurelia, configCallback) {
 
-  aurelia.globalizeResources('./validation/validate-custom-attribute');
+  aurelia.use.globalizeResources('./validation/validate-custom-attribute');
   if(configCallback !== undefined && typeof(configCallback) === 'function')
   {
     configCallback(Validation.defaults);
